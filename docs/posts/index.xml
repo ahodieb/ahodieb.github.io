@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Abdallah Hodieb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Mar 2021 11:17:24 +0000</lastBuildDate><atom:link href="http://ahodieb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Mar 2021 23:11:06 +0100</lastBuildDate><atom:link href="http://ahodieb.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring the Raspberry Pi Pico</title>
+      <link>http://ahodieb.github.io/raspberry-pi-pico/01/</link>
+      <pubDate>Wed, 31 Mar 2021 23:11:06 +0100</pubDate>
+      
+      <guid>http://ahodieb.github.io/raspberry-pi-pico/01/</guid>
+      <description>The RaspberryPi Pico was released earlier this year and I haven&amp;rsquo;t seen this much hype since the Arduino or the original RaspberryPi. It looked good, and it is very cheap (you can get one for less than 4£) so i got one to play around.
+Why am i writing this ? There are plenty of good tutorials, examples, and books for the RaspberryPi Pico, so anything i write about here is most likely available somewhere else.</description>
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>http://ahodieb.github.io/posts/2021-03-23-upcomming/</link>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Exploring the Raspberry Pi Pico | Abdallah Hodieb</title>
+
+
+
+<link href="http://ahodieb.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Abdallah Hodieb">
+
+<link rel="stylesheet" href="/css/style.css"><link rel='stylesheet' href='http://ahodieb.github.io/css/custom.css'><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="canonical" href="http://ahodieb.github.io/raspberry-pi-pico/01/">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<section class="section">
+  <div class="container">
+    <nav id="nav-main" class="nav">
+      <div id="nav-name" class="nav-left">
+        <a id="nav-anchor" class="nav-item" href="http://ahodieb.github.io/">
+          <h1 id="nav-heading" class="title is-4">Abdallah Hodieb</h1>
+        </a>
+      </div>
+      <div class="nav-right">
+        <nav id="nav-items" class="nav-item level is-mobile"><a class="level-item" aria-label="twitter" href='https://twitter.com/abdallahhodieb'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="linkedin" href='https://linkedin.com/in/abdallahhodieb'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="github" href='https://github.com/ahodieb'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    
+  </svg></i>
+            </span>
+          </a><a class="level-item" aria-label="email" href='mailto:abdallah.hodieb@gmail.com'
+            target='_blank' rel='noopener'>
+            <span class="icon">
+              <i class><svg viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+    
+  </svg></i>
+            </span>
+          </a></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+  <script src="/js/navicon-shift.js"></script>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+    </div>
+    <h2 class="subtitle is-6">March 31, 2021</h2>
+    <h1 class="title">Exploring the Raspberry Pi Pico</h1>
+    
+    <div class="content">
+      <p>The <a href="https://www.raspberrypi.org/blog/raspberry-pi-silicon-pico-now-on-sale/">RaspberryPi Pico was released earlier this year</a> and I haven&rsquo;t seen this much hype since the Arduino or the original RaspberryPi. It looked good, and it is very cheap (<a href="https://thepihut.com/products/raspberry-pi-pico">you can get one for less than 4£</a>) so i got one to play around.</p>
+<p><img src="https://www.raspberrypi.org/documentation/rp2040/getting-started/static/64b50c4316a7aefef66290dcdecda8be/Pico-R3-SDK11-Pinout.svg" alt=""></p>
+<h3 id="why-am-i-writing-this-">Why am i writing this ?</h3>
+<p>There are plenty of good tutorials, examples, and books for the RaspberryPi Pico, so anything i write about here is most likely available somewhere else. But for my own benefit I decided to explore the different key features of the Pico and document them in a series of posts.</p>
+<h3 id="getting-started">Getting started</h3>
+<h4 id="install-and-connect">Install and Connect</h4>
+<ol>
+<li><a href="https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython">Install the MicroPython UF2 file</a>
+This was very simple to do, download the pre-compiled file from the website and drop it to the mounted RPI-RP2 USB device
+<img src="https://www.raspberrypi.org/documentation/rp2040/getting-started/static/4e43e3d335a3769aa85da9519b67af89/MicroPython-FINAL.gif" alt="Setup Animation"></li>
+</ol>
+<p><em>Image credit: <a href="https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython">raspberry-pi website</a></em></p>
+<ol start="2">
+<li>Connecting to the REPL</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install minicom <span style="color:#75715e"># needed for serial communications with the device</span>
+ls /dev/tty.usbmodem0000000000001 <span style="color:#75715e"># confirm the device is available</span>
+minicom -b <span style="color:#ae81ff">115200</span> -o -D /dev/tty.usbmodem0000000000001
+</code></pre></div><h4 id="gotchas">Gotchas</h4>
+<ol>
+<li>To mount the Pico in mass device mode, press and keep pressing the button for a bit after you connect the usb cable.</li>
+<li>To get the REPL, do not press the button when connecting the device, it should appear as <code>/dev/tty.usbmodem0000000000001</code></li>
+</ol>
+<h4 id="hello-world">Hello World</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> help()
+
+Welcome to MicroPython<span style="color:#960050;background-color:#1e0010">!</span>
+
+For online help please visit https:<span style="color:#f92672">//</span>micropython<span style="color:#f92672">.</span>org<span style="color:#f92672">/</span>help<span style="color:#f92672">/.</span>
+
+For access to the hardware use the <span style="color:#e6db74">&#39;machine&#39;</span> module<span style="color:#f92672">.</span>  RP2 specific commands
+are <span style="color:#f92672">in</span> the <span style="color:#e6db74">&#39;rp2&#39;</span> module<span style="color:#f92672">.</span>
+<span style="color:#f92672">...</span>
+
+<span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello World&#34;</span>)
+
+Hello World
+</code></pre></div><h4 id="blink">Blink</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> machine <span style="color:#f92672">import</span> Pin
+<span style="color:#f92672">import</span> time
+
+led <span style="color:#f92672">=</span> Pin(<span style="color:#ae81ff">25</span>, Pin<span style="color:#f92672">.</span>OUT) <span style="color:#75715e"># Pin 25 is attached to the on device LED</span>
+
+<span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
+    led<span style="color:#f92672">.</span>toggle()
+    time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.5</span>)
+</code></pre></div><h4 id="blink-with-timer">Blink with Timer</h4>
+<p>This uses the <a href="https://datasheets.raspberrypi.org/rp2040/rp2040-datasheet.pdf">built in timer</a> to control the blinking frequency</p>
+<blockquote>
+<p>The system timer peripheral on RP2040 provides a global microsecond timebase for the system, and generates
+interrupts based on this timebase. It supports the following features:
+A single 64-bit counter, incrementing once per microsecond.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> machine <span style="color:#f92672">import</span> Pin, Timer
+
+led <span style="color:#f92672">=</span> Pin(<span style="color:#ae81ff">25</span>, Pin<span style="color:#f92672">.</span>OUT) <span style="color:#75715e"># Pin 25 is attached to the on device LED</span>
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">blink</span>(timer):
+    <span style="color:#66d9ef">global</span> led
+    led<span style="color:#f92672">.</span>toggle()
+
+timer <span style="color:#f92672">=</span> Timer()
+timer<span style="color:#f92672">.</span>init(freq<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, mode<span style="color:#f92672">=</span>Timer<span style="color:#f92672">.</span>PERIODIC, callback<span style="color:#f92672">=</span>blink)
+</code></pre></div><h3 id="writing-code-in-an-editor">Writing code in an Editor</h3>
+<p>The <a href="https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico/2">official tutorial</a> recommends using <a href="https://thonny.org/">Thonny</a> but i prefer using vscode. To do that you need the <a href="https://marketplace.visualstudio.com/items?itemName=ChrisWood.pico-go">Pico-Go extension</a></p>
+<h3 id="how-do-python-files-get-uploaded-">How do python files get uploaded ?</h3>
+<p>The official docs do not mention this explicitly, but looking around I found <a href="https://github.com/scientifichackers/ampy">Adafruit MicroPython tool</a> which is used for uploading code to Adafruit MicroPython boards. Looking at the code gives a clue to how simple yet annoying it is.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># https://github.com/scientifichackers/ampy/blob/master/ampy/files.py</span>
+
+<span style="color:#75715e"># ...</span>
+<span style="color:#75715e"># remotely execute open file</span>
+self<span style="color:#f92672">.</span>_pyboard<span style="color:#f92672">.</span>exec_(<span style="color:#e6db74">&#34;f = open(&#39;{0}&#39;, &#39;wb&#39;)&#34;</span><span style="color:#f92672">.</span>format(filename))
+
+<span style="color:#75715e"># convert files to chunks then write them remotely</span>
+self<span style="color:#f92672">.</span>_pyboard<span style="color:#f92672">.</span>exec_(<span style="color:#e6db74">&#34;f.write({0})&#34;</span><span style="color:#f92672">.</span>format(chunk))
+</code></pre></div><p>This is not necessarily how it exactly works in Pico-Go or on the RaspberryPi Pico, but it gives me a mental model of how its working under the hood</p>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>Setting up the Pico with MicroPython is fairly simple.</li>
+<li>The timer on the Pico can be used to schedule fairly accurate ticks.</li>
+<li>REPL helps to play around quickly, but for anything practical we should use an Editor like <a href="https://marketplace.visualstudio.com/items?itemName=ChrisWood.pico-go">vscode + pico-go</a> or <a href="https://thonny.org/">Thonny</a></li>
+<li><a href="https://datasheets.raspberrypi.org/pico/raspberry-pi-pico-python-sdk.pdf">The official python documentation is pretty good</a></li>
+</ul>
+<h3 id="what-to-explore-next-">What to explore next ?</h3>
+<ul>
+<li>Play with Temperature sensor</li>
+<li>USB device emulation (Keyboard &amp; Mouse)</li>
+<li>Check floating point acceleration</li>
+<li>Explore the low power modes</li>
+<li>Explore dual core (Threads)</li>
+</ul>
+<p><a href="https://twitter.com/intent/tweet?text=@abdallahhodieb%20https://www.abdallahhodieb.com/raspberry-pi-pico/01"><img src="https://img.shields.io/badge/-discuss-blue?style=flat-square&amp;logo=Twitter&amp;logoColor=white" alt="discuss on twitter"></a></p>
+
+      
+      <div class="related">
+</div>
+      
+    </div>
+    
+  </div>
+</section>
+
+    <script src="/js/copycode.js"></script>
+
+
+
+<section class="section">
+  <div class="container has-text-centered">
+    <p></p>
+    
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
+
