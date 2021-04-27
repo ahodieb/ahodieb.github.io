@@ -1,6 +1,9 @@
 ---
 title: "Hello World"
 date: 2021-03-23T11:17:24Z
+tags: ["hello world", "first"]
+url: "/hello-world"
+aliases: ["/posts/2021-03-23-upcomming/"]
 ---
 
 I have accumulated a lot of random ideas that i want to transcribe and in doing so organize them into into coherent thoughts. So i decided to start a blog.
