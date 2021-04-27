@@ -3,7 +3,7 @@ title: "Exploring the Raspberry Pi Pico"
 date: 2021-03-31T23:11:06+01:00
 url: "/raspberry-pi-pico/01"
 tags: ["raspberrypi", "raspberrypi-pico", "hardware", "code"]
-image: "https://www.raspberrypi.org/documentation/rp2040/getting-started/static/64b50c4316a7aefef66290dcdecda8be/Pico-R3-SDK11-Pinout.svg"
+image: "posts/exploring-the-pico/raspberry-pi-pico.png"
 ---
 
 The [RaspberryPi Pico was released earlier this year](https://www.raspberrypi.org/blog/raspberry-pi-silicon-pico-now-on-sale/) and I haven't seen this much hype since the Arduino or the original RaspberryPi. It looked good, and it is very cheap ([you can get one for less than 4£](https://thepihut.com/products/raspberry-pi-pico)) so i got one to play around.
