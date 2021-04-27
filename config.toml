@@ -3,29 +3,28 @@ languageCode = "en-us"
 title = "Abdallah Hodieb"
 theme = "kiss"
 
-[params.rss] # Adding this tag enables RSS feed
-includeContent = true # Includes whole content in rss
-authorName = "Abdallah Hodieb" # Author full name
-authorEmail = "abdallah.hodieb@gmail.com" # Author email
-
-[params.assets]
-customCSS = ["css/custom.css"]
-
 [params.info]
-homeTitle = "" # Title for home page
-related = true # Includes related articles at the bottom of the article
-codeCopy = true # Add copy button above code blocks
-taxonomiesCount = true # Add taxonomies count
+homeTitle = "Abdallah Hodieb | Blog"
+related = true
+codeCopy = true
+taxonomiesCount = true
+enableSocial = true
+
+[taxonomies]
+tag = "tags"
+series = "series"
+
+[params.rss]
+includeContent = true
+authorName = "Abdallah Hodieb"
+authorEmail = "abdallah.hodieb@gmail.com"
 
 [params.social]
 twitter = "abdallahhodieb"
 github = "ahodieb"
 email = "abdallah.hodieb@gmail.com"
 linkedin = "abdallahhodieb"
-rss = "index.xml" # Add this to show RSS button in social.
+rss = "rss.xml"
 
 [params.social.config]
-platforms = ["twitter","linkedin", "github", "email"]
-
-[taxonomies]
-tag ="tags"
+platforms = ["twitter","linkedin", "github", "email", "rss"]
