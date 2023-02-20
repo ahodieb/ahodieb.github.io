@@ -1,15 +1,3 @@
-[submodule "themes/ananke"]
-	path = themes/ananke
-	url = https://github.com/budparr/gohugo-theme-ananke.git
-[submodule "themes/hugo-theme-codex"]
-	path = themes/hugo-theme-codex
-	url = https://github.com/jakewies/hugo-theme-codex.git
-[submodule "themes/mini"]
-	path = themes/mini
-	url = https://github.com/nodejh/hugo-theme-mini.git
-[submodule "kiss"]
-	path = kiss
-	url = https://github.com/ribice/kiss.git
 [submodule "themes/kiss"]
 	path = themes/kiss
-	url = https://github.com/ribice/kiss.git
+	url = git@github.com:ahodieb/ahodieb.github.io-theme.git
