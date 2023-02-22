@@ -125,5 +125,3 @@ This is not necessarily how it exactly works in Pico-Go or on the RaspberryPi Pi
 * Check floating point acceleration
 * Explore the low power modes
 * Explore dual core (Threads)
-
-[![discuss on twitter](https://img.shields.io/badge/-discuss-blue?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/intent/tweet?text=@abdallahhodieb%20https://www.abdallahhodieb.com/raspberry-pi-pico/01)
