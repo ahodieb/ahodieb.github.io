@@ -20,11 +20,13 @@ authorName = "Abdallah Hodieb"
 authorEmail = "abdallah.hodieb@gmail.com"
 
 [params.social]
-twitter = "abdallahhodieb"
-github = "ahodieb"
-email = "abdallah.hodieb@gmail.com"
 linkedin = "abdallahhodieb"
-rss = "rss.xml"
+github = "ahodieb"
+mastodon = "fosstodon.org/@ahodieb"
+twitter = "abdallahhodieb"
+email = "abdallah.hodieb@gmail.com"
+rss = "index.xml"
+
 
 [params.social.config]
-platforms = ["twitter","linkedin", "github", "email", "rss"]
+platforms = ["linkedin", "github", "mastodon", "twitter", "email", "rss"]
