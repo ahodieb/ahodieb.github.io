@@ -3,12 +3,13 @@ title: "Exploring the Raspberry Pi Pico"
 date: 2021-03-31T23:11:06+01:00
 url: "/raspberry-pi-pico/01"
 tags: ["raspberrypi", "raspberrypi-pico", "hardware", "code"]
-image: "posts/exploring-the-pico/raspberry-pi-pico.png"
+image: "/img/raspberrypi-pico/pinout.png"
 ---
 
 The [RaspberryPi Pico was released earlier this year](https://www.raspberrypi.org/blog/raspberry-pi-silicon-pico-now-on-sale/) and I haven't seen this much hype since the Arduino or the original RaspberryPi. It looked good, and it is very cheap ([you can get one for less than 4£](https://thepihut.com/products/raspberry-pi-pico)) so i got one to play around.
 
-![](https://www.raspberrypi.org/documentation/rp2040/getting-started/static/64b50c4316a7aefef66290dcdecda8be/Pico-R3-SDK11-Pinout.svg)
+{{< figure src="/img/raspberrypi-pico/pinout.png" alt="pinout diagram of the raspberry pi pico" attr="from raspberrypi.com" attrlink="https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html" >}}
+
 
 ### Why am i writing this ?
 
@@ -20,9 +21,9 @@ There are plenty of good tutorials, examples, and books for the RaspberryPi Pico
 
 1. [Install the MicroPython UF2 file](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython)
 This was very simple to do, download the pre-compiled file from the website and drop it to the mounted RPI-RP2 USB device
-![Setup Animation](https://www.raspberrypi.org/documentation/rp2040/getting-started/static/4e43e3d335a3769aa85da9519b67af89/MicroPython-FINAL.gif)
 
-*Image credit: [raspberry-pi website](https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython)*
+{{< figure src="/img/raspberrypi-pico/micropython-installation.gif" alt="animation showing the installation steps for micro python" attr="from raspberrypi.com" attrlink="https://www.raspberrypi.org/documentation/rp2040/getting-started/#getting-started-with-micropython" >}}
+
 
 2. Connecting to the REPL
 
