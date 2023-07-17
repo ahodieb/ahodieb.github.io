@@ -17,16 +17,11 @@ series = "series"
 [params.rss]
 includeContent = true
 authorName = "Abdallah Hodieb"
-authorEmail = "abdallah.hodieb@gmail.com"
+authorEmail = "a.bdallah.hodieb+blog@gmail.com"
 
 [params.social]
 linkedin = "abdallahhodieb"
 github = "ahodieb"
-mastodon = "fosstodon.org/@ahodieb"
-twitter = "abdallahhodieb"
-email = "abdallah.hodieb@gmail.com"
-rss = "index.xml"
-
 
 [params.social.config]
-platforms = ["linkedin", "github", "mastodon", "twitter", "email", "rss"]
+platforms = ["linkedin", "github"]
